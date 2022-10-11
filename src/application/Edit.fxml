@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="paneEdit" prefHeight="775.0" prefWidth="493.0" style="-fx-background-color: #1B2430;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Edit">
+   <children>
+      <ImageView fitHeight="829.0" fitWidth="561.0" layoutX="-65.0" layoutY="-49.0">
+         <image>
+            <Image url="@background.jpg" />
+         </image>
+      </ImageView>
+      <VBox layoutX="29.0" layoutY="19.0" prefHeight="739.0" prefWidth="440.0" style="-fx-background-color: #00000040; -fx-background-radius: 30;">
+         <children>
+            <Button fx:id="exitEdit" mnemonicParsing="false" onAction="#exitEdit" prefHeight="20.0" prefWidth="20.0" style="-fx-background-radius: 100; -fx-background-color: #00000000; -fx-border-color: #ffffff; -fx-border-radius: 30;" text="X" textFill="#eeeeee">
+               <effect>
+                  <DropShadow offsetY="5.0">
+                     <color>
+                        <Color opacity="0.5" />
+                     </color>
+                  </DropShadow>
+               </effect>
+               <font>
+                  <Font name="Consolas" size="12.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="401.0" top="13.0" />
+               </VBox.margin>
+            </Button>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="359.0" style="-fx-background-color: #336e7b; -fx-background-radius: 30;">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="41.0" prefWidth="303.0" text="  ✎ EDIT EMPLOYEE" textFill="WHITE">
+                     <font>
+                        <Font name="Calibri Light" size="36.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="30.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets left="20.0" right="20.0" top="20.0" />
+               </VBox.margin>
+            </HBox>
+            <Label prefHeight="35.0" prefWidth="314.0" text="ID Employe *" textFill="WHITE">
+               <font>
+                  <Font name="Calibri" size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="20.0" right="20.0" />
+               </VBox.margin>
+            </Label>
+            <TextField fx:id="idEdit" prefHeight="35.0" style="-fx-background-radius: 30; -fx-background-color: #00000000; -fx-border-color: #ffffff; -fx-border-radius: 30;">
+               <VBox.margin>
+                  <Insets left="20.0" right="20.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Consolas" size="12.0" />
+               </font>
+               <effect>
+                  <DropShadow offsetY="5.0">
+                     <color>
+                        <Color opacity="0.30000001192092896" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </TextField>
+            <Label prefHeight="35.0" prefWidth="314.0" text="Last Name" textFill="WHITE">
+               <VBox.margin>
+                  <Insets left="20.0" right="20.0" top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Calibri" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="lastnameEdit" prefHeight="35.0" style="-fx-background-radius: 30; -fx-background-color: #00000000; -fx-border-color: #ffffff; -fx-border-radius: 30;">
+               <VBox.margin>
+                  <Insets left="20.0" right="20.0" />
+               </VBox.margin>
+               <effect>
+                  <DropShadow offsetY="5.0">
+                     <color>
+                        <Color opacity="0.30000001192092896" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </TextField>
+            <Label prefHeight="35.0" prefWidth="473.0" text="First Name" textFill="WHITE">
+               <VBox.margin>
+                  <Insets left="20.0" right="20.0" top="15.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Calibri" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="firstnameEdit" prefHeight="35.0" style="-fx-background-radius: 30; -fx-background-color: #00000000; -fx-border-color: #ffffff; -fx-border-radius: *; -fx-border-radius: 30;">
+               <VBox.margin>
+                  <Insets left="20.0" right="20.0" />
+               </VBox.margin>
+               <effect>
+                  <DropShadow offsetY="5.0">
+                     <color>
+                        <Color opacity="0.30000001192092896" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </TextField>
+            <Label prefHeight="35.0" prefWidth="311.0" text="Gender M/F" textFill="WHITE">
+               <VBox.margin>
+                  <Insets left="20.0" right="20.0" top="15.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Calibri" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="genderEdit" prefHeight="35.0" style="-fx-background-radius: 30; -fx-background-color: #00000000; -fx-border-color: #ffffff; -fx-border-radius: 30;">
+               <VBox.margin>
+                  <Insets left="20.0" right="20.0" />
+               </VBox.margin>
+               <effect>
+                  <DropShadow offsetY="5.0">
+                     <color>
+                        <Color opacity="0.30000001192092896" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </TextField>
+            <Label prefHeight="35.0" prefWidth="318.0" text="Year Of Experience" textFill="WHITE">
+               <VBox.margin>
+                  <Insets left="20.0" right="20.0" top="15.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Calibri Italic" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="yoeEdit" prefHeight="35.0" style="-fx-background-radius: 30; -fx-background-color: #00000000; -fx-border-color: #ffffff; -fx-border-radius: 30;">
+               <VBox.margin>
+                  <Insets left="20.0" right="20.0" />
+               </VBox.margin>
+               <effect>
+                  <DropShadow offsetY="5.0">
+                     <color>
+                        <Color opacity="0.30000001192092896" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </TextField>
+            <Label prefHeight="15.0" prefWidth="310.0" text=" Information can be modified later" textFill="#8a959a">
+               <VBox.margin>
+                  <Insets bottom="20.0" left="20.0" top="5.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Calibri" size="11.0" />
+               </font>
+            </Label>
+            <Button fx:id="buttonfinish" mnemonicParsing="false" onAction="#finish" prefHeight="47.0" prefWidth="359.0" style="-fx-background-radius: 30; -fx-background-color: #336e7b;" stylesheets="@application.css" text="✔ EDIT" textFill="WHITE">
+               <VBox.margin>
+                  <Insets left="40.0" right="20.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Calibri Light" size="24.0" />
+               </font>
+               <effect>
+                  <DropShadow offsetY="5.0">
+                     <color>
+                        <Color opacity="0.5" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Button>
+            <Text fill="#8a959a" strokeType="OUTSIDE" strokeWidth="0.0" text="All sensitive data are subject to confidentiality rules in force in the province of Quebec. Any illegal use will be punished by law.        23:788:22|667" textAlignment="JUSTIFY" wrappingWidth="297.13671875">
+               <VBox.margin>
+                  <Insets bottom="20.0" left="70.0" right="20.0" top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Calibri" size="11.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Copyright © 2022 - Amine Lakhal">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="119.0" />
+               </VBox.margin>
+            </Text>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
