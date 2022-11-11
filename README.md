@@ -9,7 +9,7 @@ https://user-images.githubusercontent.com/96929412/194971356-b5f8bf67-2d5a-400d-
 
 This is a desktop application that let the user manage an employee database via a
 graphical user interface. It can also be used as a template to store, edit and delete 
-any specific data. 
+any specific data. 💼 
 
 **Login page :**
 
